@@ -1,0 +1,592 @@
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,700;0,900;1,300&display=swap');
+</style>
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --color-green: #3b945e;
+    --color-white: black;
+    --color-border: #948B3B;
+    --font-staat: 'Noto Sans', sans-serif, 'Roboto', sans-serif;
+    --font-os:  'Oswald', sans-serif;
+    --font-ram: 'Rambla', sans-serif;
+}
+
+/* global classes */
+.font-staat{
+    font: normal 400 18px var(--font-staat);
+}
+.font-os{
+    font: normal 300 18px var(--font-os);
+    color: blue;
+}
+.font-ram{
+    font: normal bold 18px var(--font-ram);
+}
+
+.font-size-40{
+    font-size: 40px;
+}
+.font-size-34{
+    font-size: 34px;
+}
+.font-size-27{
+    font-size: 27px;
+}
+.font-size-20{
+    font-size: 20px;
+}
+.font-size-16{
+    font-size: 16px;
+}
+
+.bgcolor-black{
+    background-color: var(--color-green);
+}
+
+/* #global classes */
+
+#header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index:2;
+    transition: left .5s ease;
+}
+
+#header nav{
+    height: 100vh;
+}
+#header .site-title .navbar-brand{
+    letter-spacing: 2px;
+    color: var(--color-white);
+}
+
+#header .nav-link{
+    margin: .5rem 1rem;
+    border-bottom: 1px solid var(--color-border);
+    text-transform: uppercase;
+}
+
+#header .nav-link:hover{
+    color: var(--color-white) !important;
+}
+
+#header .toggle-button{
+    background: none;
+    color: var(--color-green);
+    position: fixed;
+    top: 25px;
+    right: 20px;
+    border: 1px solid var(--color-border);
+}
+
+#toggle_button{
+    background: none;
+    color: var(--color-green);
+    position: fixed;
+    top: 25px;
+    right: 20px;
+    border: 1px solid var(--color-border);
+    z-index: 111;
+}
+.header_center{
+    text-align: center;
+    /* margin: 0px 0px 50px 0px; */
+}
+#WTC{
+    margin: 20px 0;
+}
+.margin_top_text{
+    margin-top: 15px;
+}
+.toggle-left{
+    left: 0 !important;
+    width: 1000px !important;
+}
+
+/* site-main */
+
+/* .site-banner .banner-area{
+    background: url(./assets/mountains.jpg) no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+} */
+.banner-area{
+    background: url(../assets/beakers-for-science.jpg) no-repeat;
+    background-size: cover;
+    width: 100%;
+    min-height: 100vh;
+    position: relative;
+}
+.banner_area_WTC {
+        background: url(../assets/work/01.jpg) no-repeat;
+        background-position-x: 0%;
+        background-position-y: 0%;
+        background-size: auto;
+        background-size: cover;
+        width: 100%;
+        background-position: center;
+        padding: 15px 0px;
+        right: 0;
+        z-index: 1;
+}
+.banner_area_Cleaning {
+    background: url(../assets/work/02.jpg) no-repeat;
+    background-position-x: 0%;
+    background-position-y: 0%;
+    background-size: auto;
+    background-size: cover;
+    width: 100%;
+    position: relative;
+    background-position:center bottom;
+    padding: 15px 0px;
+    /* position: fixed; */
+    right: 0;
+    z-index: 1;
+}
+
+.banner_area_Laundry {
+    background: url(../assets/work/03.jpg) no-repeat;
+    background-position-x: 0%;
+    background-position-y: 0%;
+    background-size: auto;
+    background-size: cover;
+    width: 100%;
+    position: relative;
+    background-position:center left;
+    padding: 15px 0px;
+    /* position: fixed; */
+    right: 0;
+    z-index: 1;
+}
+
+.banner_area_Retail {
+    background: url(../assets/work/04.jpg) no-repeat;
+    background-position-x: 0%;
+    background-position-y: 0%;
+    background-size: auto;
+    background-size: cover;
+    width: 100%;
+    position: relative;
+    background-position:center left;
+    padding: 15px 0px;
+    /* position: fixed; */
+    right: 0;
+    z-index: 1;
+}
+
+.banner_area_Jwellery {
+    background: url(../assets/work/05.jpg) no-repeat;
+    background-position-x: 0%;
+    background-position-y: 0%;
+    background-size: auto;
+    background-size: cover;
+    width: 100%;
+    position: relative;
+    background-position:center right;
+    padding: 15px 0px;
+    /* position: fixed; */
+    right: 0;
+    z-index: 1;
+}
+
+.banner_area_Pool {
+    background: url(../assets/work/06.jpg) no-repeat;
+    background-position-x: 0%;
+    background-position-y: 0%;
+    background-size: auto;
+    background-size: cover;
+    width: 100%;
+    position: relative;
+    background-position: center bottom;
+    padding: 15px 0px;
+    /* position: fixed; */
+    right: 0;
+    z-index: 1;
+}
+
+.banner_area_Soap {
+    background: url(../assets/work/07.jpg) no-repeat;
+    background-position-x: 0%;
+    background-position-y: 0%;
+    background-size: auto;
+    background-size: cover;
+    width: 100%;
+    position: relative;
+    background-position: center;
+    padding: 15px 0px;
+    /* position: fixed; */
+    right: 0;
+    z-index: 1;
+}
+
+.banner_area_Advance {
+    background: url(../assets/work/08.jpg) no-repeat;
+    background-position-x: 0%;
+    background-position-y: 0%;
+    background-size: auto;
+    background-size: cover;
+    width: 100%;
+    position: relative;
+    background-position: center;
+    padding: 15px 0px;
+    /* position: fixed; */
+    right: 0;
+    z-index: 1;
+}
+
+.banner_area_Garment {
+    background: url(../assets/work/09.jpg) no-repeat;
+    background-position-x: 0%;
+    background-position-y: 0%;
+    background-size: auto;
+    background-size: cover;
+    width: 100%;
+    position: relative;
+    background-position: center;
+    padding: 15px 0px;
+    /* position: fixed; */
+    right: 0;
+    z-index: 1;
+}
+
+.banner_area_Furniture {
+    background: url(../assets/work/10.jpg) no-repeat;
+    background-position-x: 0%;
+    background-position-y: 0%;
+    background-size: auto;
+    background-size: cover;
+    width: 100%;
+    position: relative;
+    background-position: center bottom;
+    padding: 15px 0px;
+    /* position: fixed; */
+    right: 0;
+    z-index: 1;
+}
+
+.banner_area_Glass {
+    background: url(../assets/work/11.jpg) no-repeat;
+    background-position-x: 0%;
+    background-position-y: 0%;
+    background-size: auto;
+    background-size: cover;
+    width: 100%;
+    position: relative;
+    background-position: center top;
+    padding: 15px 0px;
+    /* position: fixed; */
+    right: 0;
+    z-index: 1;
+}
+
+.banner_area_Nepalipaper {
+    background: url(../assets/work/12.jpg) no-repeat;
+    background-position-x: 0%;
+    background-position-y: 0%;
+    background-size: auto;
+    background-size: cover;
+    width: 100%;
+    position: relative;
+    background-position: center bottom;
+    padding: 15px 0px;
+    /* position: fixed; */
+    right: 0;
+    z-index: 1;
+}
+
+.banner_area_Metal {
+    background: url(../assets/work/13.jpg) no-repeat;
+    background-position-x: 0%;
+    background-position-y: 0%;
+    background-size: auto;
+    background-size: cover;
+    width: 100%;
+    position: relative;
+    background-position: center;
+    padding: 15px 0px;
+    /* position: fixed; */
+    right: 0;
+    z-index: 1;
+}
+
+.banner_area_Accessories {
+    background: url(../assets/work/14.jpg) no-repeat;
+    background-position-x: 0%;
+    background-position-y: 0%;
+    background-size: auto;
+    background-size: cover;
+    width: 100%;
+    position: relative;
+    background-position: center bottom;
+    padding: 15px 0px;
+    /* position: fixed; */
+    right: 0;
+    z-index: 1;
+}
+
+.banner_area_Others {
+    background: url(../assets/work/15.jpg) no-repeat;
+    background-position-x: 0%;
+    background-position-y: 0%;
+    background-size: auto;
+    background-size: cover;
+    width: 100%;
+    position: relative;
+    background-position: center right;
+    padding: 15px 0px;
+    /* position: fixed; */
+    right: 0;
+    z-index: 1;
+}
+
+.wtc_list {
+    margin-top: -2mm;    
+    color: black;
+    text-shadow:2px 2px 4px whitesmoke;
+    text-align: center;
+    background: linear-gradient(#2193b0, #6dd5ed, #91EAE4);
+    border-radius: 4mm; 
+}
+
+.cleaning_list {
+    margin-top: -2mm;    
+    color: whitesmoke;
+    text-shadow:2px 2px 8px black;
+    text-align: center;
+    background: linear-gradient(#2193b0, #6dd5ed, #91EAE4);
+    border-radius: 4mm; 
+}
+
+.laundry {
+    margin-top: -2mm;    
+    color: whitesmoke;
+    text-shadow:2px 2px 8px black;
+    text-align: center;
+    background: linear-gradient(#2193b0, #6dd5ed, #91EAE4);
+    border-radius: 4mm; 
+}
+.Retail {
+    margin-top: -2mm;    
+    color: whitesmoke;
+    text-shadow:2px 2px 8px black;
+    text-align: center;
+    background: linear-gradient(#2193b0, #6dd5ed, #91EAE4);
+    border-radius: 4mm; 
+}
+
+.Jwellery {
+    margin-top: -2mm;    
+    color: whitesmoke;
+    text-shadow:2px 2px 8px black;
+    text-align: center;
+    background: linear-gradient(#2193b0, #6dd5ed, #91EAE4);
+    border-radius: 4mm; 
+}
+
+.Pool {
+    margin-top: -2mm;    
+    color: whitesmoke;
+    text-shadow:2px 2px 8px black;
+    text-align: center;
+    background: linear-gradient(#2193b0, #6dd5ed, #91EAE4);
+    border-radius: 4mm; 
+}
+
+.Soap {
+    margin-top: -2mm;    
+    color: whitesmoke;
+    text-shadow:2px 2px 8px black;
+    text-align: center;
+    background: linear-gradient(#2193b0, #6dd5ed, #91EAE4);
+    border-radius: 4mm; 
+}
+
+.Advance {
+    margin-top: -2mm;    
+    color: whitesmoke;
+    text-shadow:2px 2px 8px black;
+    text-align: center;
+    background: linear-gradient(#2193b0, #6dd5ed, #91EAE4);
+    border-radius: 4mm; 
+}
+
+
+.Garment {
+    margin-top: -2mm;    
+    color: whitesmoke;
+    text-shadow:2px 2px 8px black;
+    text-align: center;
+    background: linear-gradient(#2193b0, #6dd5ed, #91EAE4);
+    border-radius: 4mm; 
+}
+
+.Furniture {
+    margin-top: -2mm;    
+    color: whitesmoke;
+    text-shadow:2px 2px 8px black;
+    text-align: center;
+    background: linear-gradient(#2193b0, #6dd5ed, #91EAE4);
+    border-radius: 4mm; 
+}
+
+.Glass {
+    margin-top: -2mm;    
+    color: whitesmoke;
+    text-shadow:2px 2px 8px black;
+    text-align: center;
+    background: linear-gradient(#2193b0, #6dd5ed, #91EAE4);
+    border-radius: 4mm; 
+}
+
+.Nepalipaper {
+    margin-top: -2mm;    
+    color: whitesmoke;
+    text-shadow:2px 2px 8px black;
+    text-align: center;
+    background: linear-gradient(#2193b0, #6dd5ed, #91EAE4);
+    border-radius: 4mm; 
+}
+
+.Metal {
+    margin-top: -2mm;    
+    color: whitesmoke;
+    text-shadow:2px 2px 8px black;
+    text-align: center;
+    background: linear-gradient(#2193b0, #6dd5ed, #91EAE4);
+    border-radius: 4mm; 
+}
+
+.Accessories {
+    margin-top: -2mm;    
+    color: whitesmoke;
+    text-shadow:2px 2px 8px black;
+    text-align: center;
+    background: linear-gradient(#2193b0, #6dd5ed, #91EAE4);
+    border-radius: 4mm; 
+}
+
+.Others {
+    margin-top: -2mm;    
+    color: whitesmoke;
+    text-shadow:2px 2px 8px black;
+    text-align: center;
+    background: linear-gradient(#2193b0, #6dd5ed, #91EAE4);
+    border-radius: 4mm; 
+}
+
+.font-back {    
+    background-color:var(--color-green);
+    border-radius: 1mm;
+        
+}
+.wrapper-product
+{
+    /* margin-top: 180px; */
+} 
+.introText {
+    text-shadow: 0 0 1px rgb(15, 17, 104), 0 0 1px rgb(0, 0, 0), 0 0 1px rgb(0, 0, 0), 0 0 1px rgb(0, 0, 0); 
+    color: yellow;
+    font-size: 35px;    
+}
+/* .site-banner .banner-area .author{
+    margin: 0;
+    position: absolute;
+    top: 40%;
+    left: 40%;
+    transform: translate(-50%, -50%);
+} */
+.margin-center{
+    margin:auto;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+.Product .bars p, .site-content .Product .bars span{
+    line-height: 25px;
+}
+#portfolio .pb-3{
+margin-top: 1rem;
+}
+.card {
+    /* margin-right: 5px;
+    margin-left: 5px; */
+    padding-bottom: 5%;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.card-title{
+    word-break: break-word;
+    width: 100%;
+}
+#footer form .row .col input[type="text"],
+#footer form .row .col input[type="email"],
+#footer form textarea{
+    border: none;
+    border-radius: 0;
+    border-bottom: 1px solid gray;
+    padding: 1.5rem 1rem;
+}
+.model_button{
+    margin-top: 15px;
+}
+.social{
+    margin-top: 10px;
+}
+.social span{
+    padding: 6px;
+}
+.card_div{
+    position: relative; 
+    min-height: 130px;
+}
+ .view_product{
+    position: absolute; 
+    bottom: 5px;
+    width: 100%;
+    text-align: center;
+}
+.button_right{
+    text-align: right;
+}
+.button_right button{
+    padding: 10px 25px;
+}
+.product_sec{
+    border: 1px solid rgba(0,0,0,.125);
+    padding: 5px 5px;
+    border-radius: 5px;
+    max-height: 68px;
+}
+@media only screen and (max-width: 1075px) {
+    .card_div{
+        min-height: 150px;
+    }
+  }
+@media screen and (min-width: 768px){
+    .toggle-button{
+        display: none;
+    }
+    #header{
+        z-index:0;
+    }
+    
+}
+@media only screen and (max-width: 600px) {
+    .card_div{
+        min-height: 110px;
+    }
+    .view_product {
+        text-align: left;
+    }
+  }
+
+/* #site-main */
